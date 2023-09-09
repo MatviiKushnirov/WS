@@ -13,13 +13,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <a href="" class="header-logo">WebStudio</a>
+      <nav class="nav">
+          <ul class="nav-list">
+              <li class="nav-list-item"><a class="nav-list-link" href="index.html">Студія</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="portfolio.html">Портфоліо</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
+          </ul>
+      </nav>
+      <ul class="contacts-list">
+          <li class="contacts-list-item"><a class="contacts-list-link" href="info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contacts-list-item"><a class="contacts-list-link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+      </ul>
+    </div>
+  </header>
   <main class="inform">
     <section class="section-portfolio">
+      <div class="container">
       <h1 class="hidden-title">Портфоліо</h1>
-      <ul class="filter-list list">
+      <ul class="filter-list">
         <li class="filter-item">
             <button class="filter-item-btn-blue">Усі</button>
         </li>
@@ -95,9 +112,11 @@
           <p class="portfolio-item-text">Додаток</p>
         </li>
       </ul>
+    </div>
     </section>
   </main>
   <footer class="footer">
+    <div class="container">
     <a href="" class="footer-logo">WebStudio</a>
     <address class="address">
     <ul class="address-list">
@@ -106,6 +125,7 @@
         <li class="address-list-item"><a href="tel:+380961111111" class="address-list-link">+38 096 111 11 11</a></li>
     </ul>
     </address>
+    </div>
     </footer>
 </body>
 </html>
