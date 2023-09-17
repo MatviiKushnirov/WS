@@ -4,7 +4,6 @@ body{
 }
 
 .header{
-    background-color: var(--white-main-color);
     padding: 24px 0;
 }
 
@@ -15,6 +14,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    color: black;
 }
 
 .header-logo{
@@ -24,8 +24,25 @@ body{
  line-height: 36px;
  letter-spacing: 0.03em;
  text-align: left;
+ color: #2196F3;
 }
 
+
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+
+.contacts-list{
+    display: flex;
+    gap: 50px;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .nav-list-link{
     font-weight: 500;
@@ -44,42 +61,35 @@ body{
 
 .hero-btn{
     font-size: 16px;
-    background-color: #2196F3
+    background-color: #2196F3;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 
 .filter-item-btn-blue{
     background-color: #2196F3;
 }
-
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
+  
+.hero-title{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.hero-wrap{
+    background-color: rgb(47, 48, 58);
 }
 
-a {
-    text-decoration: none;
-}
 
-button {
-    border: none;
-}
 
 .container {
     width: 1200px;
@@ -90,17 +100,72 @@ button {
 
 .hero{
     padding: 200px 0;
+    background-color: rgb(47, 48, 58);
 }
 
 .features{
-    padding: 94px 215px;
+    padding: 94px 0;
+}
+
+
+.features-list{
+    display: flex;
+    gap: 30px;
+}
+
+.features-list-title{
+    font-size: 25px;
+}
+
+.features-list-description{
+    margin-top: 10px;
 }
 
 .work{
     padding: 94px 0;
 }
 
+.work-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.work-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.team-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 94px;
+    font-size: 30px;
+}
+
+.team-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
+.team-list-img{
+   width: 270px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: block;
+}
+
+
 .footer{
+    background-color: rgb(47, 48, 58);
     padding: 60px 0;
 }
 
@@ -108,14 +173,7 @@ button {
     padding: 20px 0;
 }
 
-.address{
-    padding: 20px 0;
-}
-
-.inform{
-    padding: 94px 215px;
-}
-
-.footer{
-    padding: 60px 0;
+.team{
+    background-color: rgb(245, 244, 250);
+    display: flex;
 }
