@@ -17,7 +17,7 @@ body{
     color: black;
 }
 
-.header-logo{
+.span{
  font-family: "Oleo Script";
  font-size: 26px;
  font-weight: 400;
@@ -27,6 +27,35 @@ body{
  color: #2196F3;
 }
 
+.filter-list{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.filter-item-btn{
+    margin-right: 8px;
+}
+
+.filter-item-btn:hover{
+    background-color: #2196F3;
+}
+
+.portfolio-list{
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item-title{
+    padding-top: 20px;
+}
+
+.portfolio-item-text{
+    padding-top: 4px;
+    padding-bottom: 114px;
+}
 
 .nav-list{
     display: flex;
@@ -163,14 +192,23 @@ body{
    display: block;
 }
 
-
 .footer{
     background-color: rgb(47, 48, 58);
     padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-logo{
     padding: 20px 0;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: black;
 }
 
 .team{
