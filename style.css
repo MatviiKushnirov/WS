@@ -114,12 +114,6 @@ align-items: center;
     align-items: center;
 }
 
-.hero-wrap{
-    background-color: rgb(47, 48, 58);
-}
-
-
-
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -129,13 +123,12 @@ align-items: center;
 
 .hero{
     padding: 200px 0;
-    background-color: rgb(47, 48, 58);
+    background-image: url(./Img\ \(23\).jpg);
 }
 
 .features{
     padding: 94px 0;
 }
-
 
 .features-list{
     display: flex;
@@ -143,6 +136,42 @@ align-items: center;
 }
 
 .features-list-title{
+    font-size: 25px;
+}
+
+.features-list-title1::before{
+    content: "";
+    background-image: url(./Group\ 1.png);
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.features-list-title2::before{
+    content: "";
+    background-image: url(./Group\ 2.png);
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.features-list-title3::before{
+    content: "";
+    background-image: url(./Group\ 3.png);
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.features-list-title4::before{
+    content: "";
+    background-image: url(./Group\ 4.png);
+    width: 250px;
+    height: 100px;
+    display: inline-block;
     font-size: 25px;
 }
 
@@ -176,12 +205,33 @@ align-items: center;
     font-size: 30px;
 }
 
+.team-list-item{
+    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
+}
+
 .team-list{
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     padding-top: 50px;
     padding-bottom: 94px;
+}
+
+.team-list-title{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-list-description{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-list-img{
