@@ -50,11 +50,19 @@ align-items: center;
 
 .portfolio-item-title{
     padding-top: 20px;
+    padding-left: 24px;
 }
 
 .portfolio-item-text{
     padding-top: 4px;
-    padding-bottom: 114px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.portfolio-list-item:hover{
+    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
 }
 
 .nav-list{
@@ -248,6 +256,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 94px;
 }
 
 .footer-logo{
@@ -259,6 +268,14 @@ align-items: center;
     letter-spacing: 0.03em;
     text-align: left;
     color: black;
+}
+
+.address-list-link{
+    color: white;
+}
+
+.address-list-link2{
+    color: grey;
 }
 
 .team{
