@@ -63,6 +63,15 @@ align-items: center;
     font-size: 16px;
 }
 
+.portfolio-item-text1{
+    padding-top: 4px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 94px;
+}
+
 .portfolio-list-item:hover{
     box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
     -webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.31);
@@ -135,7 +144,13 @@ align-items: center;
 
 .hero{
     padding: 200px 0;
-    background-image: url(./Img\ \(23\).jpg);
+    background-image: 
+    linear-gradient(
+    to right,
+  rgba(41, 46, 52, 0.4),
+  rgba(41, 46, 52, 0.4)
+    ),
+    url(./Img\ \(23\).jpg);
 }
 
 .features{
@@ -260,7 +275,6 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 94px;
 }
 
 .footer-logo{
