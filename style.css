@@ -13,18 +13,17 @@ body{
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
-    color: black;
+    color: #2196F3;
 }
 
-.span{
- font-family: "Oleo Script";
- font-size: 26px;
- font-weight: 400;
- line-height: 36px;
- letter-spacing: 0.03em;
- text-align: left;
- color: #2196F3;
+.header-span{
+    font-family: 'Oleo Script';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em; 
+
+    color: #000000; 
 }
 
 .filter-list{
@@ -224,6 +223,28 @@ align-items: center;
     padding-top: 50px;
 }
 
+.work-list-item-wrap{
+    position: relative;
+}
+
+.work-list-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2F303ACC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+}
+
 .team-title{
     display: flex;
     justify-content: center;
@@ -284,8 +305,16 @@ align-items: center;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
-    color: black;
+    color: #2196F3;
+}
+
+.logo-span{
+    font-family: "Oleo Script";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .address-list-link{
@@ -299,4 +328,94 @@ align-items: center;
 .team{
     background-color: rgb(245, 244, 250);
     display: flex;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.social-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link{
+    width: 44px;
+    height: 44px;
+}
+
+.social-list-link:hover{
+    border-radius: 25px;
+    background-color:#2196F3;
+}
+
+.clients{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.clients-list{
+    display: flex;
+    gap: 30px;
+}
+
+.clients-list-item{
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-title{
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    color:  #212121;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list-link{
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.clients-list-link:hover{
+    border: 1px solid #2196F3;
+}
+
+.footer-container{
+    display: flex;
+    gap: 70px;
+}
+
+.footer-social-list-title{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;    
+    color:  #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.footer-social-list{
+    display: flex;
+    gap: 22px;
+}
+
+.footer-social-list-link:hover{
+    border-radius: 25px;
+    background-color:#2196F3;
 }
