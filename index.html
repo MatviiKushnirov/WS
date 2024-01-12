@@ -59,7 +59,7 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО
             БІЗНЕСУ
         </h1>
-        <button class="hero-btn">Замовити послугу</button>
+        <button class="hero-btn"><span class="hero-btn-text" data-modal-open>Замовити послугу</span></button>
       </div>
       </div>
     </section>
@@ -371,6 +371,71 @@
  </ul>
 </div>
 </div>
+<div class="footer-form-wrap">
+  <h6 class="footer-form-title">Підпишіться на розсилку</h6>
+  <form class="footer-form">
+      <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+      <button class="footer-form-btn" type="submit">
+          Підписатися
+          <a class="footer-form-link" href="#">
+              <svg class="footer-form-svg" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-telegram"></use>
+              </svg>
+          </a>
+      </button>
+  </form>
+</div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+      <p class="modal-desc">Залиште свої дані, ми вам передзвонимо</p>
+      <button class="modal-close-btn" data-modal-close>
+          <span class="modal-btn-span">
+              <svg class="modal-svg-btn" width="11" height="11">
+                  <use href="./symbol-defs.svg#icon-Close"></use>
+              </svg>
+          </span>
+      </button>
+      <form class="modal-form">
+          <label class="modal-label">
+              Ім'я
+              <span class="modal-span">
+                <input type="text" class="input-name"  name="user-name" required  minlength="3" maxlength="10">
+                <svg width="12" height="12" class="modal-span-svg">
+                  <use href="./symbol-defs.svg#icon-People" class="modal-span-icon"></use>
+                </svg>
+              </span>
+          </label>
+          <label class="modal-label">
+              Телефон
+              <span class="modal-span">
+                <input type="tel" class="input-tel" name="user-tel" pattern="^380\d{9}$" title="Номер повинен починатися на 380 і повинен мати 12 цифр" maxLength="12" required>
+                <svg width="15" height="12" class="modal-span-svg">
+                  <use href="./symbol-defs.svg#icon-Tel" class="modal-span-icon"></use>
+                </svg>
+              </span>
+          </label>
+          <label class="modal-label">
+              Пошта
+              <span class="modal-span">
+            <input type="email" class="input-email" name="user-email" required>
+            <svg width="15" height="12" class="modal-span-svg">
+              <use href="./symbol-defs.svg#icon-Email2" class="modal-span-icon"></use>
+            </svg>
+          </span>
+          </label>
+       <label class="modal-label">
+        Коментар
+         <textarea name="user-message" class="modal-textarea" placeholder="Введіть текст"></textarea>
+       </label>
+       <div class="modal-privacy">
+        <input type="checkbox" name="user-privacy" class="privacy-input" required>
+        <span class="privacy-span">Погоджуюся з розсилкою та приймаю <a href="" class="privacy-link">Умови договору</a></span>
+       </div>
+       <button class="modal-send-btn" type="submit">Відправити</button>
+      </form>
+  </div>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
