@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.min.css">
 </head>
 <body>
     <header class="header">
@@ -261,7 +260,7 @@
         </section>
         <section class="section-clients">
             <div class="container">
-                <h4 class="clients-title">Постійні клієнти</h4>
+                <h4 class="section-clients-title">Постійні клієнти</h4>
                 <ul class="clients-list">
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
@@ -412,17 +411,19 @@
                 </label>
              <label class="modal-label">
               Коментар
-               <textarea name="user-message" class="modal-textarea" placeholder="Введіть текст"></textarea>
+             <textarea name="user-message" class="modal-textarea" placeholder="Введіть текст"></textarea>
              </label>
              <div class="modal-privacy">
               <input type="checkbox" name="user-privacy" class="privacy-input" required>
-              <span class="privacy-span">Погоджуюся з розсилкою та приймаю <a href="" class="privacy-link">Умови договору</a></span>
+              <span class="privacy-span">Погоджуюся з розсилкою та приймаю 
+              <a href="" class="privacy-link">Умови договору
+              </a>
+              </span>
              </div>
              <button class="modal-send-btn" type="submit">Відправити</button>
             </form>
         </div>
     </div>
     <script src="./script.js"></script>
-    <script src="./header-fixed.js"></script>
 </body>
 </html>

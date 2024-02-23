@@ -1,0 +1,75 @@
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $second-page-button-background;
+    &-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $menu-nav;
+        margin-bottom: 50px;
+    }
+    &-wrap{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.team-list{
+    display: flex;
+    gap: 30px;
+    &-item{
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: $head-color;
+    }
+    &-info{
+        margin-top: 30px;
+    }
+    &-title{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $menu-nav;
+        margin-bottom: 10px;
+    }
+    &-desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $address;
+    }
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    &-link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: rgba(175, 177, 184);
+        background-color: white;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover{
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(33, 150, 243, 1);
+        }
+    }
+    &-svg{
+        fill: currentColor;
+    }
+}

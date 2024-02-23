@@ -1,0 +1,17 @@
+.section-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $button-background;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../Img\ \(23\).jpg");
+    &-title{
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $head-color;
+        max-width: 696px;
+        margin: 0 auto;
+    }
+}
