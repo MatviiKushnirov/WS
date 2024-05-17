@@ -1,0 +1,136 @@
+.header{
+    padding: 16px 0;
+    border-bottom: 1px solid $portfolio-line;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
+    &-wrap{
+        display: flex;
+        align-items: center;
+        @include tab(768px){
+            display: flex;
+            gap: 88px;
+        }
+        @include desc(1200px){
+            gap: 92px;
+        }
+    }
+    &-btn{
+        display: block;
+        background-color: transparent;
+        margin-left: auto;
+        @include tab(768px){
+            display: none;
+        }
+    }
+}
+
+
+.header-logo{
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $logo-first;  
+}
+
+.header-studio{
+    color: $logo-second;
+}  
+
+.nav-list{
+    display: none;
+    @include tab(768px){
+        display: flex;
+        gap: 50px;
+    &-link{
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $menu-nav;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover{
+            color: rgba(33, 150, 243, 1);
+        }
+    }
+    }
+}
+
+@keyframes navActive {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.active{
+    color:rgba(33, 150, 243, 1);;
+}
+
+.active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(33, 150, 243, 1);
+    margin-bottom: -30px;
+    animation-name: navActive;
+    animation-duration: 1s;
+    @include desc(1200px){
+        margin-bottom: -24px;
+    }
+}
+
+.contacts-list{
+    display: none;
+    @include tab(768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
+    @include desc(1200px){
+        flex-direction: row;
+        gap: 30px;
+    }
+    &-link{
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $address;
+        width: 161px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgba(117, 117, 117, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include tab(768px) {
+            font-size: 12px;
+        }
+
+        @include desc(1200px) {
+            font-size: 14px;
+        }
+        &:hover{
+            color: rgba(33, 150, 243, 1);
+        }
+    }
+}
+
+.contacts-list-svg{
+    margin-bottom: 2px;
+    fill: currentColor;
+}

@@ -1,0 +1,64 @@
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @include desc(1200px){
+        flex-direction: row;
+        gap: 12px;
+    }
+    &-title{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+    &-input{
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding: 15px;
+        width: 358px;
+        outline: none;
+        color: rgba(255, 255, 255, 1);
+        &::placeholder{
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &-link{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        color: rgba(255, 255, 255, 1);
+    }
+    &-svg{
+        fill: currentColor;
+    }
+
+        &-input{
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 15px;
+            width: 100%;
+            outline: none;
+            color: rgba(255, 255, 255, 1);
+            @include tab(768px){
+                width: 450px;
+            }
+            @include desc(1200px){
+                width: 358px;
+            }
+    }
+}

@@ -1,0 +1,115 @@
+.portfolio-section{
+    padding: 60px 0;
+    @include desc(1200px){
+        padding: 94px 0;
+    }
+}
+
+.filter-list{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    @include tab(768px){
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include desc(1200px){
+        margin-bottom: 50px;
+    }
+}
+
+.filter-list-btn{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $menu-nav;
+    padding: 6px 25px;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        background-color: rgba(33, 150, 243, 1);
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.portfolio-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include tab(768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &-title{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $menu-nav;
+        margin-bottom: 4px;
+    }
+    &-desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: $address;
+    }
+    &-link{
+        height: 100%;
+        display: block;
+    }
+    &-item{   
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid $second-page-container-bg;
+        @include tab(768px){
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        @include desc(1200px){
+            flex-basis: calc((100% - 60px) / 3);
+        }
+        &:hover .overlay-desc {
+            transform: translateY(0);
+        }
+        &:hover{
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
+    }
+    &-wrap{
+        padding: 20px 24px;
+    }
+}
+
+.overlay{
+    position: relative;
+    overflow: hidden;
+    &-desc{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(101%);
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.90);
+        transition: transform 0.5s ease;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 1);
+        padding: 77px 24px;
+        @include tab(768px){
+            padding: 49px 24px 77px 24px;
+        }
+        @include desc(1200px){
+            padding: 63px 24px;
+        }
+    }
+}

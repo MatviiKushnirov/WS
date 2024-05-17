@@ -1,0 +1,112 @@
+.is-hidden-mob{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mob-menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: white;
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.mob-menu.is-hidden-mob{
+    transform: translateX(-100%);
+}
+
+.mob-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.mob-button-close {
+    position: absolute;
+    width: 40px; 
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+}
+
+.mob-button-close:hover{
+    color: rgba(33, 150, 243, 1);
+}
+
+.mob-menu-close-svg{
+    fill: currentColor;
+}
+
+.mob-menu-nav-list-item {
+    margin-bottom: 32px;
+}
+
+.mob-menu-contacts-list-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-menu-social-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 64px;
+}
+
+.mob-menu-nav-list-link {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.88px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(33, 33, 33, 1);
+    &:hover{
+        color: rgba(33, 150, 243, 1);
+    }
+}
+
+.mob-menu-contacts-list-link {
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 39.84px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+    &:hover{
+        color: rgba(33, 150, 243, 1);
+    }
+}
+
+.mob-menu-mail{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+}
+
+.mob-menu-social-list-item:not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu-social-list-link {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(33, 150, 243, 1);
+    padding-right: 10px;
+}

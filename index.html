@@ -8,13 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css " /> -->
     <link rel="stylesheet" href="./main.min.css">
 </head>
 <body>
+
     <header class="header">
             <div class="container">
                 <div class="header-wrap">
         <a href="" class="header-logo">Web<span class="header-studio">Studio</span></a>
+
+
         <nav class="nav">
         <ul class="nav-list">
             <li class="nav-list-item"><a href="./index.html" class="nav-list-link active">Студія</a></li>
@@ -26,56 +30,113 @@
             <li class="contacts-list-item">
                 <a href="mailto:" class="contacts-list-link">
                     <svg class="contacts-list-svg" width="16" height="12">
-                        <use href="./symbol-defs.svg#icon-email"></use>
+                        <use href="./symbol-defs.svg#icon-email-connection"></use>
                     </svg>info@devstudio.com</a>
                 </li>
             <li class="contacts-list-item">
                 <a href="tel:" class="contacts-list-link">
                     <svg class="contacts-list-svg" width="10" height="16">
-                        <use href="./symbol-defs.svg#icon-smartphone"></use>
+                        <use href="./symbol-defs.svg#icon-phone-connection"></use>
                     </svg>+38 096 111 11 11</a>
             </li>
         </ul>
+            <button class="header-btn mob-menu-open">
+                <svg width="24" height="16">
+                    <use href="./symbol-defs.svg#icon-header-btn"></use>
+                </svg>
+            </button>
+                </div>
+            </div>
+            <div class="mob-menu  is-hidden-mob">
+                <div class="mob-menu-container">
+                    <button type="button" class="mob-button-close">
+                        <svg class="mob-menu-close-svg" width="19"height="19">
+                            <use href="./symbol-defs.svg#icon-exit"></use>
+                        </svg>
+                    </button>
+                        <nav class="mob-menu-nav">
+                            <ul class="mob-menu-nav-list">
+                                <li class="mob-menu-nav-list-item"><a href="./index.html"class="mob-menu-nav-list-link">Студія</a></li>
+                                <li class="mob-menu-nav-list-item"><a href="./portfolio.html"class="mob-menu-nav-list-link">Портфоліо</a></li>
+                                <li class="mob-menu-nav-list-item"><a href=""class="mob-menu-nav-list-link">Контакти</a></li>
+                            </ul>
+                        </nav>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contacts-list">
+                            <li class="mob-menu-contacts-list-item"><a href="tel:"class="mob-menu-contacts-list-link">+38 096 111 11 11</a></li>
+                            <li class="mob-menu-contacts-list-item"><a href="mailto:"class="mob-menu-contacts-list-link mob-menu-mail">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="mob-menu-social-list">
+                            <li class="mob-menu-social-list-item"><a href=""class="mob-menu-social-list-link">Instagram</a></li>
+                            <li class="mob-menu-social-list-item"><a href=""class="mob-menu-social-list-link">Twitter</a></li>
+                            <li class="mob-menu-social-list-item"><a href=""class="mob-menu-social-list-link">Facebook</a></li>
+                            <li class="mob-menu-social-list-item"><a href=""class="mob-menu-social-list-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
         <main>
+
+
         <section class="section-hero">
         <div class="container">
             <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="section-hero-btn" data-modal-open>Замовити послугу</button>
         </div>
         </section>
+
+
         <section class="section-features">
             <div class="container">
             <ul class="features-list">
-                <li class="features-list-item-first">
+                <li class="features-list-item">
+                    <div class="features-wrap">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./symbol-defs.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
                     <h2 class="features-list-title">УВАГА ДО ДЕТАЛЕЙ</h2>
                     <p class="features-list-desc">
-                        Ідейні міркування, і навіть початок<br>
-                        повсякденної роботи з формування<br> 
+                        Ідейні міркування, і навіть початок
+                        повсякденної роботи з формування
                         позиції.
                     </p>
                 </li>
-                <li class="features-list-item-second">
+                <li class="features-list-item">
+                    <div class="features-wrap">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                     <h2 class="features-list-title">ПУНКТУАЛЬНІСТЬ</h2>
                     <p class="features-list-desc">
-                        Завдання організації, особливо рамки<br>
+                        Завдання організації, особливо рамки
                         і місце навчання кадрів тягне у себе.
                     </p>
                 </li>
-                <li class="features-list-item-third">
+                <li class="features-list-item">
+                    <div class="features-wrap">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./symbol-defs.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
                     <h2 class="features-list-title">ПЛАНУВАННЯ</h2>
                     <p class="features-list-desc">
-                        Так само консультація з широким<br>
+                        Так само консультація з широким
                         активом значною мірою зумовлює.
                     </p>
                 </li>
-                <li class="features-list-item-fourth">
+                <li class="features-list-item">
+                    <div class="features-wrap">
+                        <svg class="features-icon" width="70" height="70">
+                            <use href="./symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
                     <h2 class="features-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                     <p class="features-list-desc">
-                        Значимість цих проблем настільки<br>
-                        очевидна, що реалізація планових<br>
+                        Значимість цих проблем настільки
+                        очевидна, що реалізація планових
                         завдань.
                     </p>
                 </li>
@@ -83,23 +144,98 @@
                 </div>
         </div>
         </section>
+
+
         <section class="section-work">
             <div class="container">
             <h3 class="section-work-title">Чим ми займаємося</h3>
             <ul class="work-list">
-                <li class="work-list-item"><div class="work-list-wrap"><img src="./box1.jpg" alt="Зображення" class="work-list-img"><p class="work-list-desc">Десктопні додатки</p></div></li>
-                <li class="work-list-item"><div class="work-list-wrap"><img src="./box2.jpg" alt="Зображення" class="work-list-img"><p class="work-list-desc">Мобільні додатки</p></div></li>
-                <li class="work-list-item"><div class="work-list-wrap"><img src="./box3.jpg" alt="Зображення" class="work-list-img"><p class="work-list-desc">Дизайнерські рішення</p></div></li>
+                <li class="work-list-item">
+                    <div class="work-list-wrap">
+                        <picture>
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgfirst.webp 1x, ./images/2x-desc-work-first.webp 2x, ./images/3x-desc-work-first.webp 3x"
+                            type="image/webp"
+                            />
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgfirst.jpg 1x, ./images/2x-desc-work-first.jpg 2x, ./images/3x-desc-work-first.jpg 3x"
+                            type="image/jpeg"
+                            />
+                            <img src="./images/work_list_imgfirst.jpg" alt="Зображення" class="work-list-img">
+                        </picture>
+                        <p class="work-list-desc">Десктопні додатки</p>
+                    </div>
+                </li>
+                <li class="work-list-item">
+                    <div class="work-list-wrap">
+                        <picture>
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgsecond.webp 1x, ./images/2x-desc-work-second.webp 2x, ./images/3x-desc-work-second.webp 3x"
+                            type="image/webp"
+                            />
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgsecond.jpg 1x, ./images/2x-desc-work-second.jpg 2x, ./images/3x-desc-work-second.jpg 3x"
+                            type="image/jpeg"
+                            />
+                            <img src="./images/work_list_imgsecond.jpg" alt="Зображення" class="work-list-img">
+                        </picture>
+                        <p class="work-list-desc">Мобільні додатки</p>
+                    </div>
+                </li>
+                <li class="work-list-item">
+                    <div class="work-list-wrap">
+                        <picture>
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgthird.webp 1x, ./images/2x-desc-work-third.webp 2x, ./images/3x-desc-work-third.webp 3x"
+                            type="image/webp"
+                            />
+                            <source media="(min-width:1199px)"
+                            srcset="./images/work_list_imgthird.jpg 1x, ./images/2x-desc-work-third.jpg 2x, ./images/3x-desc-work-third.jpg 3x"
+                            type="image/jpeg"
+                            />
+                            <img src="./images/work_list_imgthird.jpg" alt="Зображення" class="work-list-img">
+                        </picture>
+                        <p class="work-list-desc">Дизайнерські рішення</p>
+                    </div>
+                </li>
             </ul>
         </div>
         </section>
+
+
         <section class="section-team">
             <div class="container">
             <h4 class="section-team-title">Наша команда</h4>
             <div class="section-team-wrap">
 <ul class="team-list">
     <li class="team-list-item">
-        <img src="./img (4).jpg" alt="Зображення" class="team-list-img"/>
+        <picture>
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgfirst.webp 1x, ./images/2x-desc-team-first.webp 2x, ./images/3x-desc-team-first.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgfirst.jpg 1x, ./images/2x-desc-team-first.jpg 2x, ./images/3x-desc-team-first.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-first.webp 1x, ./images/2x-tab-team-first.webp 2x, ./images/3x-tab-team-first.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-first.jpg 1x, ./images/2x-tab-team-first.jpg 2x, ./images/3x-tab-team-first.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-first.webp 1x, ./images/2x-mob-team-first.webp 2x, ./images/3x-mob-team-first.webp 3x"
+            type="image/webp"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-first.jpg 1x, ./images/2x-mob-team-first.jpg 2x, ./images/3x-mob-team-first.jpg 3x"
+            type="image/jpeg"
+            />
+            <img src="./images/mob-team-first.jpg" alt="Зображення" class="team-list-img"/>
+        </picture>
         <div class="team-list-info">
             <h5 class="team-list-title">Ігор Дем'яненко</h5>
             <p class="team-list-desc">
@@ -138,7 +274,33 @@
         </ul>
     </li>
     <li class="team-list-item">
-        <img src="./img(1).jpg" alt="Зображення" class="team-list-img"/>
+        <picture>
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgsecond.webp 1x, ./images/2x-desc-team-second.webp 2x, ./images/3x-desc-team-second.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgsecond.jpg 1x, ./images/2x-desc-team-second.jpg 2x, ./images/3x-desc-team-second.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-second.webp 1x, ./images/2x-tab-team-second.webp 2x, ./images/3x-tab-team-second.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-second.jpg 1x, ./images/2x-tab-team-second.jpg 2x, ./images/3x-tab-team-second.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-second.webp 1x, ./images/2x-mob-team-second.webp 2x, ./images/3x-mob-team-second.webp 3x"
+            type="image/webp"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-second.jpg 1x, ./images/2x-mob-team-second.jpg 2x, ./images/3x-mob-team-second.jpg 3x"
+            type="image/jpeg"
+            />
+            <img src="./images/mob-team-second.jpg" alt="Зображення" class="team-list-img"/>
+        </picture>
         <div class="team-list-info">
             <h5 class="team-list-title">Ольга Рєпіна</h5>
             <p class="team-list-desc">
@@ -177,7 +339,33 @@
         </ul>
     </li>
     <li class="team-list-item">
-        <img src="./img(2).jpg" alt="Зображення" class="team-list-img"/>
+        <picture>
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgthird.webp 1x, ./images/2x-desc-team-third.webp 2x, ./images/3x-desc-team-third.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgthird.jpg 1x, ./images/2x-desc-team-third.jpg 2x, ./images/3x-desc-team-third.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-third.webp 1x, ./images/2x-tab-team-third.webp 2x, ./images/3x-tab-team-third.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-third.jpg 1x, ./images/2x-tab-team-third.jpg 2x, ./images/3x-tab-team-third.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-third.webp 1x, ./images/2x-mob-team-third.webp 2x, ./images/3x-mob-team-third.webp 3x"
+            type="image/webp"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-third.jpg 1x, ./images/2x-mob-team-third.jpg 2x, ./images/3x-mob-team-third.jpg 3x"
+            type="image/jpeg"
+            />
+            <img src="./images/mob-team-third.jpg" alt="Зображення" class="team-list-img"/>
+        </picture>
         <div class="team-list-info">
             <h5 class="team-list-title">Микола Тарасов</h5>
             <p class="team-list-desc">
@@ -216,7 +404,33 @@
         </ul>
     </li>
     <li class="team-list-item">
-        <img src="./img(3).jpg" alt="Зображення" class="team-list-img"/>
+        <picture>
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgfourth.webp 1x, ./images/2x-desc-team-fourth.webp 2x, ./images/3x-desc-team-fourth.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:1199px)"
+            srcset="./images/team-list-imgfourth.jpg 1x, ./images/2x-desc-team-fourth.jpg 2x, ./images/3x-desc-team-fourth.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-fourth.webp 1x, ./images/2x-tab-team-fourth.webp 2x, ./images/3x-tab-team-fourth.webp 3x"
+            type="image/webp"
+            />
+            <source media="(min-width:767px)"
+            srcset="./images/tab-team-fourth.jpg 1x, ./images/2x-tab-team-fourth.jpg 2x, ./images/3x-tab-team-fourth.jpg 3x"
+            type="image/jpeg"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-fourth.webp 1x, ./images/2x-mob-team-fourth.webp 2x, ./images/3x-mob-team-fourth.webp 3x"
+            type="image/webp"
+            />
+            <source media="(max-width:767px)"
+            srcset="./images/mob-team-fourth.jpg 1x, ./images/2x-mob-team-fourth.jpg 2x, ./images/3x-mob-team-fourth.jpg 3x"
+            type="image/jpeg"
+            />
+            <img src="./images/mob-team-fourth.jpg" alt="Зображення" class="team-list-img"/>
+        </picture>
         <div class="team-list-info">
             <h5 class="team-list-title">Михайло Єрмаков</h5>
             <p class="team-list-desc">
@@ -258,6 +472,8 @@
             </div>
             </div>
         </section>
+
+
         <section class="section-clients">
             <div class="container">
                 <h4 class="section-clients-title">Постійні клієнти</h4>
@@ -265,42 +481,42 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-yaco"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-first"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-company_tagline_here"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-second"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">                        
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-company"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-third"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-foster_peters"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-fourth"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-brand"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-fifth"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg width="106" height="60" class="clients-list-svg">
-                                <use href="./symbol-defs.svg#icon-company_tag_line"></use>
+                                <use href="./symbol-defs.svg#icon-client-list-sixth"></use>
                             </svg>
                         </a>
                     </li>
@@ -308,9 +524,12 @@
             </div>
         </section>
     </main>
+
+
             <footer class="footer">
                 <div class="container">
                     <div class="footer-wrap">
+                        <div class="footer-tab-wrap">
                         <div class="address-box">
                 <a href="" class="footer-logo">Web<span class="footer-studio">Studio</span></a>
                 <address class="address">
@@ -354,6 +573,7 @@
                             </li>
                         </ul>
             </div>
+        </div>
             <div class="footer-form-wrap">
                 <h6 class="footer-form-title">Підпишіться на розсилку</h6>
                 <form class="footer-form">
@@ -362,7 +582,7 @@
                         Підписатися
                         <a class="footer-form-link" href="#">
                             <svg class="footer-form-svg" width="24" height="24">
-                                <use href="./symbol-defs.svg#icon-telegram"></use>
+                                <use href="./symbol-defs.svg#icon-footer-telegram"></use>
                             </svg>
                         </a>
                     </button>
@@ -371,13 +591,15 @@
                     </div>  
                 </div>
             </footer>
+
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p class="modal-desc">Залиште свої дані, ми вам передзвонимо</p>
             <button class="modal-close-btn" data-modal-close>
                 <span class="modal-btn-span">
                     <svg class="modal-svg-btn" width="11" height="11">
-                        <use href="./symbol-defs.svg#icon-Close"></use>
+                        <use href="./symbol-defs.svg#icon-modal-close-btn"></use>
                     </svg>
                 </span>
             </button>
@@ -387,7 +609,7 @@
                     <span class="modal-span">
                       <input type="text" class="input-name"  name="user-name" required  minlength="3" maxlength="10">
                       <svg width="12" height="12" class="modal-span-svg">
-                        <use href="./symbol-defs.svg#icon-People" class="modal-span-icon"></use>
+                        <use href="./symbol-defs.svg#icon-modal-user" class="modal-span-icon"></use>
                       </svg>
                     </span>
                 </label>
@@ -396,7 +618,7 @@
                     <span class="modal-span">
                       <input type="tel" class="input-tel" name="user-tel" pattern="^380\d{9}$" title="Номер повинен починатися на 380 і повинен мати 12 цифр" maxLength="12" required>
                       <svg width="15" height="12" class="modal-span-svg">
-                        <use href="./symbol-defs.svg#icon-Tel" class="modal-span-icon"></use>
+                        <use href="./symbol-defs.svg#icon-modal-tel" class="modal-span-icon"></use>
                       </svg>
                     </span>
                 </label>
@@ -405,25 +627,23 @@
                     <span class="modal-span">
                   <input type="email" class="input-email" name="user-email" required>
                   <svg width="15" height="12" class="modal-span-svg">
-                    <use href="./symbol-defs.svg#icon-Email2" class="modal-span-icon"></use>
+                    <use href="./symbol-defs.svg#icon-modal-email" class="modal-span-icon"></use>
                   </svg>
                 </span>
                 </label>
              <label class="modal-label">
               Коментар
-             <textarea name="user-message" class="modal-textarea" placeholder="Введіть текст"></textarea>
+               <textarea name="user-message" class="modal-textarea" placeholder="Введіть текст"></textarea>
              </label>
              <div class="modal-privacy">
               <input type="checkbox" name="user-privacy" class="privacy-input" required>
-              <span class="privacy-span">Погоджуюся з розсилкою та приймаю 
-              <a href="" class="privacy-link">Умови договору
-              </a>
-              </span>
+              <span class="privacy-span">Погоджуюся з розсилкою та приймаю <a href="" class="privacy-link">Умови договору</a></span>
              </div>
              <button class="modal-send-btn" type="submit">Відправити</button>
             </form>
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./mob-menu.js"></script>
 </body>
 </html>
